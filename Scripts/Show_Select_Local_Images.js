@@ -9,22 +9,22 @@
         'Knight': [
             "./images/Knight1.jpg",
             "./images/Knight2.jpg",
-			"./images/Knight3.jpg"
+	    "./images/Knight3.jpg"
         ],
         'Elf': [
             "./images/Elf1.jpg",
             "./images/Elf2.jpg",
-			"./images/Elf3.jpg"
+	    "./images/Elf3.jpg"
         ],
         'Wizard': [
             "./images/Wizard1.jpg",
             "./images/Wizard2.jpg",
-			"./images/Wizard3.jpg"
+	    "./images/Wizard3.jpg"
         ],
         'Thief': [
             "./images/Thief1.jpg",
             "./images/Thief2.jpg",
-			"./images/Thief3.jpg"
+	    "./images/Thief3.jpg"
         ]
     };
 
@@ -43,8 +43,8 @@
             const img = document.createElement('img');
             img.src = imagePath;
             img.alt = selectedValue;
-            img.style.maxWidth = '150px';
-            img.style.maxHeight = '150px';
+            img.style.maxWidth = '140px';
+            img.style.maxHeight = '140px';
             img.style.margin = '10px';
             img.style.border = '3px solid black';
             img.style.borderRadius = '10px';
