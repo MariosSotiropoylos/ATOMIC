@@ -43,8 +43,8 @@
             const img = document.createElement('img');
             img.src = imagePath;
             img.alt = selectedValue;
-            img.style.maxWidth = '160px';
-            img.style.maxHeight = '160px';
+            img.style.maxWidth = '150px';
+            img.style.maxHeight = '150px';
             img.style.margin = '10px';
             img.style.border = '3px solid black';
             img.style.borderRadius = '10px';
