@@ -27,6 +27,14 @@
             font-size: 25px; 
             font-weight: 700;
         }
+	#WarningText {
+            color: red;
+            font-size: 1em;
+            font-weight: bold;
+	    -webkit-text-stroke-width: 0.4px;
+            -webkit-text-stroke-color: black;
+	    text-align: center;
+        }
         input, select {
             font-family: Arial, sans-serif; 
             color: black; 
@@ -109,7 +117,9 @@
             <!-- The images will be dynamically inserted here -->
         </div>
 
-		<label for="input6">Health:</label>
+	<p id="WarningText"> Warning: The STAT Total must be equal to 20 </p> <br>
+	    
+	<label for="input6">Health:</label>
         <input type="number" style="width: 10em;" min=1 max=20 id="input6" name="input6" placeholder="Input Health Points" required >
         <span class="error" id="errorInput6">MUST BE ANSWERED</span><br><br>
 	<span class="error" id="errorInput6.5">Value must be between 1 and 20!</span><br><br>
@@ -124,6 +134,12 @@
         <span class="error" id="errorInput8">MUST BE ANSWERED</span><br><br>
 	<span class="error" id="errorInput8.5">Value must be between 1 and 20!</span><br><br>
 
+	<label for="input10">Intelligence:</label>
+        <input type="number" style="width: 12em;" min=1 max=20 id="input10" name="input10" placeholder="Input Intelligence Points" required>
+        <span class="error" id="errorInput10">MUST BE ANSWERED</span><br><br>
+	<span class="error" id="errorInput10.5">Value must be between 1 and 20!</span><br><br>
+
+	    
               <!-- Abilities (Input 9) -->
         <div>
             <label for="input9">Abilities:</label>
@@ -140,11 +156,7 @@
           <textarea id="abilityDescription" rows="4" cols="38" readonly  style="font-size: 15px;" placeholder="Ability description will appear here"></textarea>
        </div> <br>
 
-        <label for="input10">Intelligence:</label>
-        <input type="number" style="width: 12em;" min=1 max=20 id="input10" name="input10" placeholder="Input Intelligence Points" required>
-        <span class="error" id="errorInput10">MUST BE ANSWERED</span><br><br>
-	<span class="error" id="errorInput10.5">Value must be between 1 and 20!</span><br><br>
-
+		
         <label for="input11">Weapon:</label>
         <select id="input11" name="input11" required>
             <option value="">Select a weapon</option>
